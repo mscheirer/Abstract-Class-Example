@@ -1,31 +1,19 @@
 ﻿
-// C# program to show the  
-// working of abstract class 
-using System;
+using Abstract_Class;
 
-// Driver Class 
-public class main_method
+public class main_method                    // Driver Class 
 {
-    // Main Method 
-    public static void Main()
-    {
-        // 'g' is object of class 
-        // 'ValidationRuleBase' class ' 
-        // ValidationRuleBase' cannot 
-        // be instantiate 
-        ValidationRuleBase g;
+    public static void Main()               // Main Method 
+    {   
+        ValidationRuleBase g;               // 'g' is object of class 'ValidationRuleBase' class ' ValidationRuleBase' cannot be instantiate 
 
-        // instantiate class 'Validation1' 
-        g = new Validation1();
+        g = new Validation1();              // instantiate class 'Validation1' 
 
-        // call 'ValidationRule()' of class 'Validation1' 
-        g.ValidationRule();
+        g.ValidationRule();                 // call 'ValidationRule()' of class 'Validation1' 
 
-        // instantiate class 'Validation2'   
-        g = new Validation2();
-
-        // call 'ValidationRule()' of class 'Validation2' 
-        g.ValidationRule();
+        g = new Validation2();              // instantiate class 'Validation2'    
+     
+        g.ValidationRule();                 // call 'ValidationRule()' of class 'Validation2' 
 
     }
 }
